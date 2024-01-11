@@ -17,7 +17,9 @@ const counterIntelligence = (str) => {
     } else {
       // console.log(letter, letterCode, charShift, String.fromCharCode(letterCode - charShift), 'letterCode on line 18')
       /*
-      something is wrong here, so far for the last test, the X returns as expected, but the difference between the expected char codes and the received char codes is 26. Confused!
+      something is wrong here, so far for the last test, the X returns as expected, but the difference between the expected char codes and the received char codes is 26.
+
+      - possible solution: shifting through the character codes does not work as expected, so use this to efficiently create an alphabet array then shifting through that should work as expected.
       */
       letterCode = letterCode + charShift
       console.log(letterCode, 'letterCode on line 20')
