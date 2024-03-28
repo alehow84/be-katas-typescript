@@ -16,7 +16,8 @@
     "url": "https://github.com/northcoders/CORE-B1-katas/issues"
   },
   "devDependencies": {
-    "jest": "^27.0.6"
+    "jest": "^27.0.6",
+    "typescript": "^5.4.3"
   },
   "homepage": "https://github.com/northcoders/CORE-B1-katas#readme"
 }
