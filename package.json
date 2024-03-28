@@ -16,6 +16,9 @@
     "url": "https://github.com/northcoders/CORE-B1-katas/issues"
   },
   "devDependencies": {
+    "@babel/core": "^7.24.3",
+    "@babel/preset-env": "^7.24.3",
+    "babel-jest": "^29.7.0",
     "jest": "^27.0.6",
     "typescript": "^5.4.3"
   },
