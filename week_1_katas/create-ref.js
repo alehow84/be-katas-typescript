@@ -2,7 +2,7 @@
  Create a function called createRef that can convert an array of people into a reference object that can be used to look up a person's phone number from their name.
  */
 
-const createRef = (people) => {
+const createRef = (people, name = '', contactDetails = '') => {
   const phoneNumsObj = {};
 
   people.forEach((person) => {
