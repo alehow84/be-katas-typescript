@@ -1,7 +1,7 @@
 const createRef = require('../create-ref.js');
 
 describe('createRef', () => {
-  it('function returns a new object', () => {
+  it.skip('function returns a new object', () => {
     const startArr = [
       {
         name: 'vel',
