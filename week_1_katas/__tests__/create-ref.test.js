@@ -43,7 +43,7 @@ describe('createRef', () => {
     expect(createRef(startArr)).toEqual(expectedObj);
   });
   it('should include a key value pair in the new phoneNums obj to include the contact details specified by the third arguement', () => {
-    const startArr = [
+    const startPersonArr = [
       {
         name: 'vel',
         phoneNumber: '01134445566',
@@ -69,7 +69,29 @@ describe('createRef', () => {
       mitch: null
     };
 
-    expect(createRef(startArr, 'name', 'phoneNumber')).toEqual(expectedTelObj);
-    expect(createRef(startArr, 'name', 'address')).toEqual(expectedAddressObj);
+    const songsArr = [
+      {
+        track: '11:11',
+        artist: 'Dinosaur Pile-Up',
+        releaseYear: 2015,
+        album: 'Eleven Eleven'
+      },
+      {
+        track: 'Powder Blue',
+        artist: 'Elbow',
+        releaseYear: 2001,
+        album: 'Asleep In The Back'
+      }
+    ];
+
+    expectedSongsObj = { '11:11': 'Dinosaur Pile-Up', 'Powder Blue': 'Elbow' };
+
+    expect(createRef(startPersonArr, 'name', 'phoneNumber')).toEqual(
+      expectedTelObj
+    );
+    expect(createRef(startPersonArr, 'name', 'address')).toEqual(
+      expectedAddressObj
+    );
+    expect(createRef(songsArr, 'track', 'artist')).toEqual(expectedSongsObj);
   });
 });
