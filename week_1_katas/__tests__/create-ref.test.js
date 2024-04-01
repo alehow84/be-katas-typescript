@@ -66,7 +66,7 @@ describe('createRef', () => {
     const expectedAddressObj = {
       vel: 'Northcoders, Leeds',
       ant: 'Northcoders, Manchester',
-      mitch: 'no contact info'
+      mitch: null
     };
 
     expect(createRef(startArr, 'name', 'phoneNumber')).toEqual(expectedTelObj);
